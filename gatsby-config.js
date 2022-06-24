@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://kritikakurani26.github.io//`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

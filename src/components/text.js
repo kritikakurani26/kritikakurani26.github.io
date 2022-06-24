@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 
 const Text = ({ children, size }) => {
-  let fontSize = `20px`
+  let fontSize = `18px`
   switch (size) {
     case TextSize.small:
       fontSize = `10px`
@@ -18,7 +18,7 @@ const Text = ({ children, size }) => {
     <p
       style={{
         color: `#FFFFFF`,
-        // fontFamily: "Verdana, Helvetica, Times",
+        fontFamily: "Verdana, Helvetica, Times",
         fontSize: fontSize,
       }}
     >

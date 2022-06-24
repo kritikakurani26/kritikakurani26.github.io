@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Text from "../components/text"
-import * as styles from "../components/index.module.css"
+import * as styles from "../styles/index.module.scss"
 
 const IndexPage = () => (
   <Layout>

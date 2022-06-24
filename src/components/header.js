@@ -6,18 +6,15 @@ import { BsMedium } from "react-icons/bs"
 import { IconType } from "react-icons/lib/cjs/iconBase"
 
 import Text from "./text"
-import {
-  container,
-  leftLinks,
-  link,
-  activeLink,
-  rightLinks,
-  iconlink,
-} from "../styles/header.module.css"
+import * as styles from "../styles/header.module.scss"
 
 const IconLink = ({ url, children }) => {
   return (
-    <Link to={url} className={iconlink} activeClassName={activeLink}>
+    <Link
+      to={url}
+      className={styles.iconlink}
+      activeclassName={styles.activeLink}
+    >
       {children}
     </Link>
   )
@@ -30,14 +27,18 @@ IconLink.propTypes = {
 
 const Header = ({ siteTitle }) => {
   return (
-    <div className={container}>
-      <div className={leftLinks}>
-        <Link to="/" className={link} activeClassName={activeLink}>
+    <div className={styles.container}>
+      <div className={styles.leftLinks}>
+        <Link
+          to="/"
+          className={styles.link}
+          activeclassName={styles.activeLink}
+        >
           <Text>About</Text>
         </Link>
       </div>
 
-      <div className={rightLinks}>
+      <div className={styles.rightLinks}>
         <IconLink url="https://www.linkedin.com/in/kritikakurani/">
           <ImLinkedin color="white" />
         </IconLink>
