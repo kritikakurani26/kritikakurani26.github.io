@@ -1,0 +1,52 @@
+.container {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+.leftLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftLinks > * {
+  margin-right: 30%;
+}
+
+.test {
+  flex-grow: 1;
+}
+
+.rightLinks {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+
+.rightLinks > *:nth-child(n + 1) {
+  padding-left: 70%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.iconlink {
+  text-decoration: none;
+}
+
+.iconlink > * {
+  width: 20px;
+  height: 20px;
+}
+
+.link:hover {
+  color: darkgoldenrod;
+}
+
+.activeLink {
+  color: darkgoldenrod;
+}

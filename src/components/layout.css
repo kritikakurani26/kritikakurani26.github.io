@@ -32,17 +32,19 @@ html {
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
   overflow-y: scroll;
+  background-color: black;
 }
 body {
-  -moz-osx-font-smoothing: grayscale;
+  /* -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
   font-family: sans-serif;
   font-family: var(--font-sans);
-  font-weight: normal;
-  margin: 0;
-  word-wrap: break-word;
+  font-weight: normal; */
+  margin: 10px 20px;
+  /* word-wrap: break-word; */
 }
+/*
 a {
   background-color: transparent;
   color: var(--color-primary);
@@ -221,4 +223,4 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
-}
+} */
