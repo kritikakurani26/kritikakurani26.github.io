@@ -1,0 +1,25 @@
+.timeline {
+  margin-top: 40px;
+}
+
+.element {
+  & > * {
+    margin-top: 0px;
+  }
+
+  &:nth-child(odd) .text .date {
+    left: 135% !important;
+  }
+
+  &:nth-child(even) .text .date {
+    right: 135% !important;
+  }
+}
+
+.date {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text {
+  max-width: 42%;
+}

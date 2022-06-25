@@ -5,7 +5,7 @@ const Text = ({ children, size }) => {
   let fontSize = `18px`
   switch (size) {
     case TextSize.small:
-      fontSize = `10px`
+      fontSize = `14px`
       break
     case TextSize.large:
       fontSize = `30px`
@@ -15,15 +15,16 @@ const Text = ({ children, size }) => {
   }
 
   return (
-    <p
+    <div
       style={{
         color: `#FFFFFF`,
         fontFamily: "Verdana, Helvetica, Times",
         fontSize: fontSize,
+        marginTop: "0px",
       }}
     >
       {children}
-    </p>
+    </div>
   )
 }
 
