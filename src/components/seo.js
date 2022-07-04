@@ -68,6 +68,14 @@ function Seo({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `name`,
+          content: `viewport`,
+        },
+        {
+          name: `content`,
+          content: `width=device-width, initial-scale=1`,
+        },
       ].concat(meta)}
     />
   )

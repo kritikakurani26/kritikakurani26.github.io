@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { ImLinkedin, ImGithub } from "react-icons/im"
 import { BsMedium } from "react-icons/bs"
-import { IconType } from "react-icons/lib/cjs/iconBase"
 
 import Text from "./text"
 import * as styles from "../styles/header.module.scss"
@@ -13,7 +12,7 @@ const IconLink = ({ url, children }) => {
     <Link
       to={url}
       className={styles.iconlink}
-      activeclassName={styles.activeLink}
+      activeclassname={styles.activeLink}
     >
       {children}
     </Link>
@@ -22,20 +21,20 @@ const IconLink = ({ url, children }) => {
 
 IconLink.propTypes = {
   url: PropTypes.string,
-  children: IconType,
+  children: PropTypes.node,
 }
 
 const Header = ({ siteTitle }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="header">
       <div className={styles.leftLinks}>
-        <Link
-          to="/"
+        {/* <Link
+          to="/about"
           className={styles.link}
-          activeclassName={styles.activeLink}
+          activeclassname={styles.activeLink}
         >
           <Text>About</Text>
-        </Link>
+        </Link> */}
       </div>
 
       <div className={styles.rightLinks}>

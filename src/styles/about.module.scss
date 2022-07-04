@@ -1,0 +1,37 @@
+$layout-mobile-breakpoint: 800px;
+$layout-mobile-breakpoint-small: 500px;
+
+.personalPic {
+  border-radius: 50%;
+
+  @media screen and (max-width: $layout-mobile-breakpoint) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: $layout-mobile-breakpoint-small) and (max-width: $layout-mobile-breakpoint) {
+    width: 75%;
+  }
+}
+
+.personalPicImg {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+.rootGrid {
+  display: grid;
+  grid-template-columns: 1fr 36%;
+  column-gap: 32px;
+
+  @media screen and (max-width: $layout-mobile-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.introTextMain {
+  margin-bottom: 12px;
+  font-weight: bold;
+}

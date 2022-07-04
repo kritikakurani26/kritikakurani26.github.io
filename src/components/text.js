@@ -1,14 +1,14 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-const Text = ({ children, size }) => {
-  let fontSize = `18px`
+const Text = ({ children, size, className }) => {
+  let fontSize = `16px`
   switch (size) {
     case TextSize.small:
-      fontSize = `14px`
+      fontSize = `12px`
       break
     case TextSize.large:
-      fontSize = `30px`
+      fontSize = `36px`
       break
     default:
       break
@@ -16,6 +16,7 @@ const Text = ({ children, size }) => {
 
   return (
     <div
+      className={className}
       style={{
         color: `#FFFFFF`,
         fontFamily: "Verdana, Helvetica, Times",
@@ -37,6 +38,7 @@ const TextSize = {
 Text.propTypes = {
   children: PropTypes.string,
   size: PropTypes.string,
+  className: PropTypes.string,
 }
 
 Text.defaultProps = {
