@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[678],{6558:function(e,t,a){a.r(t);var r=a(7294),u=a(367),l=a(262),n=a(1369);t.default=function(){return r.createElement(u.Z,null,r.createElement(l.Z,{title:"Kritika Kurani"}),r.createElement(n.default,{showHeader:!1}))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-6f26f5aabdbb98625862.js.map
